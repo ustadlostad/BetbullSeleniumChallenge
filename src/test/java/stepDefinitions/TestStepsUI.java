@@ -12,12 +12,14 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import pages.LandingPage;
 import pages.LoginPage;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestSteps {
+public class TestStepsUI {
 
     Wait wait;
     WebDriver driver;
@@ -26,9 +28,10 @@ public class TestSteps {
     LandingPage landingPage ;
     LoginPage loginPage;
 
-    @Before
+    @Before("@UI")
     public void testInitialization(){
         System.getProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 20);
         action = new Actions(driver);
@@ -106,14 +109,9 @@ public class TestSteps {
     }
 
 
-
-    @After
+    @After("@UI")
     public void tearDown(){
         driver.quit();
     }
-
-
-
-
 
 }

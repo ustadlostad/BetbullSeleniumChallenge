@@ -20,6 +20,30 @@ Betbull Selenium Challenge
    
 5) Sign in with incorrect credentials. Ensure the correct error message is displayed.
 
+6) Successful registration
+   
+      ● POST on https://reqres.in/api/register
+   
+      ● Payload: email and password
+   
+      ● Response: 201 along with a token
+
+7) Unsuccessful registration
+   
+   ● POST on https://reqres.in/api/register
+   
+   ● Payload: email
+   
+   ● Response: 400 along with an error
+   
+8) List users
+   
+   ● GET on https://reqres.in/api/users
+   
+   ● No payload
+   
+   ● Response: 200 with list of users
+
 ## How to Run Tests and Get Report
 
 After cloning the project "mvn clean verify" command can be used via using command line.

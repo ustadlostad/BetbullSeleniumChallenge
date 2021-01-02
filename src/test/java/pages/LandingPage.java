@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Wait;
 
+import java.util.concurrent.TimeUnit;
+
 public class LandingPage {
 
     WebDriver driver;
@@ -23,7 +25,6 @@ public class LandingPage {
     public void navigateToLandingPage(){
 
         driver.navigate().to(landingPageUrl);
-
     }
 
     public void clickSignInButton(){
