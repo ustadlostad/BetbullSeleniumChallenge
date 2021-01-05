@@ -44,7 +44,7 @@ public class TestStepsApi {
 
             apiHelper.setHeader();
     }
-    @When("Send POST HTTP Request2")
+    @And("Send POST HTTP Request2")
     public void send_post_http_request2() {
         apiHelper.postOnlyEmail("eve.holt@reqres.in");
     }

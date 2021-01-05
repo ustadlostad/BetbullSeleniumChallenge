@@ -26,7 +26,7 @@ Betbull Selenium Challenge
    
       ● Payload: email and password
    
-      ● Response: 201 along with a token
+      ● Response: 200 along with a token
 
 7) Unsuccessful registration
    

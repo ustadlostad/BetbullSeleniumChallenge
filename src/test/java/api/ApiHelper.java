@@ -34,6 +34,7 @@ public class ApiHelper {
         }
 
     public void testStatusCode200(){
+
         Assert.assertEquals(200, response.getStatusCode());
     }
 
